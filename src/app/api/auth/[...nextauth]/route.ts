@@ -17,7 +17,7 @@ import GoogleProvider from "next-auth/providers/google"
     
     // ...add more providers here
   ],
-  
+  secret:"abcfd121423"
 }
 
 const handler =  NextAuth(authOptions)
