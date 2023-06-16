@@ -9,7 +9,7 @@ const Login = ()=>{
             <input className="bg-gray-200 rounded-md p-1.5"></input>
             <p>Password</p>
             <input className="bg-gray-200 rounded-md p-1.5" type="password"></input>
-            <p className="text-blue-500"><a>Forgot Password?</a></p>
+            <p className="text-blue-500 "><a className="cursor-pointer">Forgot Password?</a></p>
             <button className="bg-black text-center text-white p-2 rounded-lg font-medium" onClick={()=>signIn("google")}>Sign In</button>
         </div>
     )

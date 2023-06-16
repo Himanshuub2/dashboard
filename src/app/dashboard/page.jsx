@@ -16,7 +16,7 @@ const Dashboard = ()=>{
     const [isLoading,setIsLoading] =useState(false)
     setTimeout(()=>{
         setIsLoading(true)
-    },2000)
+    },1000)
     console.log(session);
     return(
         <>

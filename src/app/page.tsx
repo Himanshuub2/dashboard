@@ -36,7 +36,7 @@ const Home = ()=>{
 
             <Login/>
 
-            <p className="text-gray-500">Dont have an account? <a className = "text-blue-500">Register here</a></p>
+            <p className="text-gray-500">Dont have an account? <a className = "text-blue-500 cursor-pointer">Register here</a></p>
           
           </div>
         </div>
@@ -49,8 +49,8 @@ export default Home
 
 const Heading= ()=>{
   return(
-    <div className = "w-[30%] flex flex-col flex-start gap-y-1 ">
-    <h1 className="text-4xl font-bold  align-start">Sign In</h1>
+    <div className = "w-[30%] flex flex-col flex-start gap-y-1 ml-[-50px]">
+    <h1 className="text-4xl font-bold  align-start ">Sign In</h1>
     <p>Sign in to your account</p>
   </div>
   )
