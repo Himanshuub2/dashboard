@@ -51,7 +51,7 @@ const Activity = () => {
   }, []);
 
   return (
-    <div className="w-full h-80 ">
+    <div className="laptop:w-full mobile:w-80 laptop:h-80 mobile:h-60 ">
       {chartData  ? (
         <Line
           style={{ background: "white", borderRadius: "20px",padding:"1.9rem"}}
@@ -61,14 +61,26 @@ const Activity = () => {
           options={{
             scales: {
               y: {
+                ticks:{font:{
+                  size:8
+                }},
                 grid: {
                   display: false, // Remove grid lines for the y-axis
                 },
+              },
+              y1: {
+                ticks:{font:{
+                  size:8
+                }},
+                
               },
               x: {
                 grid: {
                   display: false, // Remove grid lines for the y-axis
                 },
+                ticks:{font:{
+                  size:8
+                }},
               },
             },
            responsive:true,
@@ -90,7 +102,7 @@ const Activity = () => {
                 align: "start",
                 color:"black",
                 font:{
-                  size:25,
+                  size:14,
                   
                 }
               },

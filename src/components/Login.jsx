@@ -3,7 +3,7 @@ import {signIn} from "next-auth/react";
 
 const Login = ()=>{
     return(
-        <div className="w-[35%] h-[30% ] bg-white p-8 rounded-[20px] flex flex-col space-y-4">
+        <div className="mobile:w-[full] laptop:w-[35%] h-[30% ] bg-white p-8 rounded-[20px] flex flex-col space-y-4">
               
             <p>Email address</p>
             <input className="bg-gray-200 rounded-md p-1.5"></input>

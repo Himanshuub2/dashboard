@@ -3,8 +3,8 @@
 const FirstCard = ()=>{
     return(
      <>
-                <div className="flex flex-row justify-between items-center px-6 py-4">
-                    <h2 className=" text-[1.3rem] font-semibold ">Top Products</h2>
+                <div className="flex flex-row justify-between items-center laptop:px-6 laptop:py-4 mobile:px-3 mobile:py-2">
+                    <h2 className=" laptop:text-[1.3rem] mobile:text-[14px] font-semibold ">Top Products</h2>
                     <SelectMonth/>
                 </div>
                 <div className="flex flex-row justify-around h-full items-center">
@@ -22,7 +22,7 @@ export default FirstCard;
 
 const SelectMonth = ()=>{
     return(
-        <select className="text-gray-400 text-[12px]">
+        <select className="text-gray-400 laptop:text-[12px] mobile:text-[10px]">
         <option className="text-gray-400">May-June 2023</option>
         <option className="text-gray-400">Jan-Feb 2023</option>
         <option className="text-gray-400">Mar-Apr 2023</option>
@@ -80,9 +80,9 @@ const List = ()=>{
             {
                 listData.map(item=>(
                     <>
-                    <div className="flex flex-row items-center">   
+                    <div className="flex flex-row items-center mobile:text-[12px]">   
                     {item.legend}
-                    <span className="font-medium ml-3">{item.title}</span>
+                    <span className="font-medium ml-3 mobile:text-[10px]">{item.title}</span>
                     </div>
                     
                    <span className="text-[12px] text-gray-500 block mb-4 ml-6" >{item.percent}</span>

@@ -4,7 +4,7 @@ import Widgets from "./MainDashboard/widgets/Widgets"
 import Cards from "./MainDashboard/footer/Cards"
 const RightDashboard = ()=>{
     return(
-        <div className="flex py-6 px-12 flex-col w-[82%] h-fit space-y-11">
+        <div className="flex laptop:py-6 laptop:px-12 mobile:py-4 mobile:px-2 flex-col  mobile:w-[100%] laptop:w-[82%] h-fit space-y-11">
             <Header/>
             <Widgets/>
             <Activity/>

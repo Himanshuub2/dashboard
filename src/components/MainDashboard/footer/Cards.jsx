@@ -5,11 +5,11 @@ import SecondCard from "./SecondCard"
 
 const Cards = ()=>{
     return(
-        <div className="flex flex-row h-64 space-x-8 ">
-         <div className="w-[45%] flex flex-col  h-full bg-white p-2 rounded-[1.6rem]">
+        <div className="flex laptop:flex-row mobile:flex-col h-flex-grow laptop:space-x-8 mobile:gap-y-10">
+         <div className="laptop:w-[45%] mobile:w-[96%] mobile:p-0 flex flex-col  h-full bg-white laptop:p-2 rounded-[1.6rem]">
             <FirstCard/>
         </div>
-        <div className="w-[45%] flex flex-col  h-full bg-white p-2 rounded-[1.6rem]">
+        <div className="laptop:w-[45%] mobile:w-[96%] mobile:p-0 flex flex-col  h-full bg-white laptop:p-2 rounded-[1.6rem]">
             <SecondCard/>
         </div>
         </div>

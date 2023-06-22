@@ -6,11 +6,11 @@ import {useSession} from "next-auth/react"
 const Header = ()=>{
     const {data:session} = useSession()
     return(
-        <div className="h-[5%] w-full flex flex-row justify-between items-center">
-            <h1 className="text-3xl font-bold">Dashboard</h1>
-            <div className="flex flex-row items-center space-x-5">
+        <div className="h-[5%] w-full flex laptop:flex-row mobile:flex-col mobile:gap-y-3  mobile:items-start laptop:justify-between items-center">
+            <h1 className="laptop:text-3xl mobile:text-[2rem] font-bold">Dashboard</h1>
+            <div className="flex flex-row items-center laptop:space-x-5 mobile:space-x-3">
                 <div className="flex flex-row">
-                <input className="rounded-md w-36 h-6 p-2"placeholder="Search"></input>
+                <input className="rounded-md w-42 h-6  p-2"placeholder="Search"></input>
                 <AiOutlineSearch style={{background:"white",borderRadius:"5px",marginLeft:'-30px',marginRight:"20px",marginTop:"1px",color:"#d5d9e0"}} size="1.3rem"/>
                 </div>
                 <svg width="18" height="20" viewBox="0 0 18 20" fill="none" xmlns="http://www.w3.org/2000/svg">

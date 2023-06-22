@@ -1,5 +1,6 @@
 import {AiOutlinePieChart,AiOutlineTags,AiOutlineCalendar,AiOutlineSetting} from "react-icons/ai"
 import {BiUserCircle} from "react-icons/bi"
+import { useMediaQuery } from "react-responsive"
 
 
 const boardElements = [
@@ -23,14 +24,14 @@ const boardElements = [
 
 const LeftDashboard = ()=>{
     
-    
+    const isMobile = useMediaQuery({maxWidth:600})
     return(
-        <div className="md:w-[18%] sm:w-[25%] h-[56rem]  bg-black p-8 rounded-[30px] space-y-14">
-            <h1 className="text-5xl text-white font-semibold ">Board.</h1>
+        <div className="mobile:w-[55%] laptop:w-[22%] h-[56rem]  bg-black mobile:p-4 laptop:p-8 rounded-[30px] space-y-14" style={{position:isMobile?"absolute":"",marginLeft:isMobile?"25px":""}}>
+            <h1 className="mobile:text-2xl laptop:text-5xl text-white font-semibold ">Board.</h1>
             <li className="text-white space-y-6 " style={{listStyle:"none"}}>
             {
                 boardElements.map((item,i)=>(
-                    <ul className="flex flex-row gap-6 cursor-pointer" key={item.title}>
+                    <ul className="mobile:text-[14px] flex flex-row mobile:gap-3 laptop:gap-6 cursor-pointer" key={item.title}>
                         {item.icon}
                         
                             {
